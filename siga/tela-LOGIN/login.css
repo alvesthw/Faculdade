@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+@font-face {
+    font-family: Rolie Twily;
+    src: url(/siga/fontes/Rolie\ Twily.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #08090B;
+
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    position: absolute; /*ocupa o espaco somente de seus elementos*/
+    
+}
+
+.div-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+    padding:50px;
+}
+
+img{
+    padding: 30px 0px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1{
+    position: relative;
+    padding: 20px 0px;
+}
+
+h1::before{ /*vai criar o efeito na linha aparecendo*/
+    content: " ";
+    position: absolute;
+    height: 6px;
+    bottom: -3px;
+    width: 0%; /*o tamanho dela começa com 0 */
+    transition: width 0.3s ease; /*isso aq deixa a transição suave*/
+    border-radius: 25px;
+    background: #EA5058;
+}
+
+section:hover h1::before{ /*quando eu dou um hover na section minha linha no h1 aparece*/
+    width: 100%;
+}
+
+
+.div-input{
+    width: 100%;
+}
+
+input{
+    background-color: transparent;
+    padding: 20px;
+    padding-right: 100px;
+    border: none;
+    border: 2px solid #08090B;
+    color: #fff; /*muda a cor do texto na hora de digitar*/
+    border-radius:5px ;
+    margin: 20px 0; /*bota uma margem so em cima e em baixo*/
+
+    outline: none; /*na hora q clica nao fica aquela borda*/
+
+    font-size: 18px;
+}
+
+input::placeholder{
+    color: #fff; /*por algum motivo somente assim q muda a cor do texto dos inputs*/
+}
+
+button{
+    border: none;
+    background-color: #EA5058;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+    margin: 10px 0 0px 0px;
+
+    font-size: 20px;
+}
+
+button a{
+    color: #fff;
+}
+
+button:hover{
+    background-color: #546F50;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover a{
+    color: #fff;
+}
+
+.div-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #EA5058;
+
+    background-color: #546F50;
+    height: 700px;
+    width: 500px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="/imagens/1x/Ativo 1.png" type="siga-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>SIGA - Cadastro</title>
+    
+</head>
+<body>
+    <section>
+        <div class="div-left">
+            <form action="cadastro.php" method="POST">
+                <div class="div-cadastro">
+                    <h1>Cadastro</h1>
+                </div>
+                <div class="div-input">
+                    <input type="text" placeholder="Nome completo" name="nome" required>
+
+                    <div class="input-sexo">
+                        <p>Sexo</p>
+
+                        <input type="radio" id="Masculino" name="sexo" name="sexo" required> <!--o 'name' faz com q deixe soment 1 input marcado-->
+                        <label for="Masculino">Masculino</label>
+
+                        <input type="radio" id="feminino" name="sexo" required>
+                        <label for="feminino">feminino</label>
+
+                        <input type="radio" id="outro" name="sexo" required>
+                        <label for="outro">Outro</label>
+
+                    </div>
+        
+                    <input type="number" placeholder="CPF" inputmode="numeric" name="cpf" required>
+        
+                    <input type="number" placeholder="Matrícula" inputmode="numeric" name="matricula" required>
+        
+                    <input type="password" placeholder="Senha" required>
+        
+                    <button type="submit" name="botao" id="botao">Casdastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="div-right"> 
+            <img src="/imagens/fundo2.png" alt="">
+        </div>
+        
+    </section>
+    
+    <!--tira as setinhas -->
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</body>
+</html>

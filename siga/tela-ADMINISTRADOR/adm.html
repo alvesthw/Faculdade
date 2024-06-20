@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="/imagens/1x/Ativo 1.png" type="siga-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tela-ADMINISTRADOR/adm.css">
+    <title>SIGA - Administrador</title>
+    
+</head>
+<body>
+    <section>
+        <div class="div-left">
+            <form   >
+                <div class="div-cadastro">
+                    <h1>Cadastro</h1>
+                </div>
+                <div class="div-input">
+
+                    <select class="select" placeholder="DEGP">
+                        <option value="DEGP">DEGP</option>
+                        <option value="RACI">RACI</option>
+                    </select>
+
+                    <input type="text" placeholder="Usuário" name="Usuário" required>
+
+                    <input type="text" placeholder="Nome completo" name="nome" required>
+
+                    <input type="number" placeholder="CPF" inputmode="numeric" name="cpf" required>
+        
+                    <input type="password" placeholder="Senha" required>
+        
+                    <button type="submit" name="botao" id="botao">Casdastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="div-right"> 
+            <img src="/imagens/fundo2.png" alt="">
+        </div>
+    </section>
+
+    
+    
+    <!--tira as setinhas -->
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</body>
+</html>

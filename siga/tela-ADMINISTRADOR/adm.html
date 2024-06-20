@@ -4,23 +4,24 @@
     <link rel="icon" href="/imagens/1x/Ativo 1.png" type="siga-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/tela-ADMINISTRADOR/adm.css">
+    <link rel="stylesheet" href="./adm.css">
     <title>SIGA - Administrador</title>
     
 </head>
 <body>
     <section>
         <div class="div-left">
-            <form   >
+            <form>
                 <div class="div-cadastro">
                     <h1>Cadastro</h1>
                 </div>
                 <div class="div-input">
 
-                    <select class="select" placeholder="DEGP">
-                        <option value="DEGP">DEGP</option>
-                        <option value="RACI">RACI</option>
-                    </select>
+                    <ul>
+                        <button class="btn" type="button">GESTÂO</button>
+                        <button class="btn" type="button">DEGP</button>
+                        <button class="btn" type="">RACI</button>
+                    </ul>
 
                     <input type="text" placeholder="Usuário" name="Usuário" required>
 
@@ -30,7 +31,7 @@
         
                     <input type="password" placeholder="Senha" required>
         
-                    <button type="submit" name="botao" id="botao">Casdastrar</button>
+                    <button type="submit" name="botao" id="botao" class="botao">Casdastrar</button>
                 </div>
             </form>
         </div>
@@ -39,8 +40,6 @@
             <img src="/imagens/fundo2.png" alt="">
         </div>
     </section>
-
-    
     
     <!--tira as setinhas -->
     <style>
@@ -50,5 +49,7 @@
             margin: 0;
         }
     </style>
+
+    <script src="./adm.js"></script>
 </body>
 </html>

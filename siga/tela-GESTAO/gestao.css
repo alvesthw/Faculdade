@@ -48,7 +48,7 @@ h2{
     padding-left: 20px;
 }
 
-.icone img{
+.logo{
     width: 50px;  /* Define a largura do ícone */
     height: 50px; /* Define a altura do ícone */
 }
@@ -73,13 +73,16 @@ h2{
 .container table tr {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%; /* Cada linha ocupa 100% da largura */
+    background-color: #faf6f6;
 }
 
 th{
-    background-color: #546F50;
+    background-color: #08090B;
     border: 1px solid #ccc;
     border-color: #fff;
+    color: white;
 }
 .container table th,
 .container table td {

@@ -4,15 +4,15 @@
     <link rel="icon" href="/imagens/1x/Ativo 1.png" type="siga-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/siga/tela-DEGP/degp.css">
+    <link rel="stylesheet" href="./degp.css">
     <title>SIGA - DEGP</title>
     
 </head>
 <body>
     <div class="container">
         <div class="icone">
-            <img src="/siga/imagens/1x/Ativo 1.png" alt="">
-            <h2>Acessos dos servidores</h2>
+            <img src="/imagens/1x/Ativo 1.png" class="logo">
+            <h2>Acesso dos Servidores</h2>
         </div>
 
         <div class="tabela">
@@ -21,21 +21,21 @@
                     <th>Usuário</th>
                     <th>Nome</th>
                     <th>CPF</th>
-                    <th>Editar</th>
+                    <th class="editar-acesso">Editar acesso</th>
                 </tr>
                 <tr>
                     <td>AAAAAAAAAAAA</td>
-                    <td>Matheus AAAAAA BBBBBBB MMMMMMMM</td>
+                    <td>Matheus AAAAAA BBBBBBB</td>
                     <td>2222222222222</td>
                     <td>
-                        <select>
-                            <option value=""></option>
-    
-                        </select>
+                        <button class="btn-remover">Remover</button>
                     </td>
                 </tr>
-    
             </table>
+        </div>
+
+        <div class="adicionar">
+            <a href="./tela-degp-adicionar/degp-adicionar.html"><button class="btn-adicionar"><img src="/imagens/icone-adicionar-botao.png" class="img-adicionar"></button></a>
         </div>
     </div>
 </body>

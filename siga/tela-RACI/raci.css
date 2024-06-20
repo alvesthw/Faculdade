@@ -48,7 +48,7 @@ h2{
     padding-left: 20px;
 }
 
-.icone img{
+.logo{
     width: 50px;  /* Define a largura do ícone */
     height: 50px; /* Define a altura do ícone */
 }
@@ -57,7 +57,7 @@ h2{
 .tabela{
     background-color: #fff;
 
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0 ;
     padding: 30px;
     width: 100%;           /* Ocupa toda a largura do contêiner */
     height: 500px;
@@ -73,13 +73,19 @@ h2{
 .container table tr {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%; /* Cada linha ocupa 100% da largura */
+    background-color: #faf6f6;
 }
-
+.editar-acesso{
+    display: flex;
+    justify-content: center;
+}
 th{
-    background-color: #546F50;
+    background-color: #08090B;
     border: 1px solid #ccc;
     border-color: #fff;
+    color: white;
 }
 .container table th,
 .container table td {
@@ -87,3 +93,45 @@ th{
     text-align: left; /* Opcional, alinha o texto à esquerda */
     padding: 8px; /* Espaçamento interno nas células */
 }
+
+.btn-remover{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: #546F50;
+    color: white;
+    border-radius: 20px;
+}
+.btn-remover:hover{
+    transition: 0.2s;
+    background-color: #EA5058;
+    color: #08090B;
+    cursor: pointer;
+
+}
+
+.adicionar{
+    padding: 30px;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.btn-adicionar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition:  0.35s ease;
+}
+.img-adicionar{
+    width: 40px;  /* Define a largura do ícone */
+    height: 40px; /* Define a altura do ícone */
+}
+.btn-adicionar :hover{
+    transition:  0.2s;
+    transform: scale(1.2);
+}
+
+
